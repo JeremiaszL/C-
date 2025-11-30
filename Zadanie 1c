@@ -1,0 +1,47 @@
+using System;
+
+class Licz
+{
+    private int wartosc;
+
+    public Licz(int start)
+    {
+        wartosc = start;
+    }
+
+    public void Dodaj(int x)
+    {
+        wartosc += x;
+    }
+
+    public void Odejmij(int x)
+    {
+        wartosc -= x;
+    }
+
+    public void Wypisz()
+    {
+        Console.WriteLine("Wartość: " + wartosc);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Licz a = new Licz(14);
+        Licz b = new Licz(65);
+        Licz c = new Licz(-10);
+        
+        a.Dodaj(7);
+        b.Odejmij(23);
+        c.Dodaj(16);
+        c.Odejmij(3);
+        
+        Console.Write("a -> "); a.Wypisz();
+        Console.Write("b -> "); b.Wypisz();
+        Console.Write("c -> "); c.Wypisz();
+        
+        Console.ReadKey();
+    }
+}
