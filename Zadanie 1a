@@ -1,6 +1,6 @@
 using System;
 
-public class Licz
+class Licz
 {
     public int wartosc;
 
@@ -19,23 +19,24 @@ class Program
 {
     static void Main(string[] args)
     {
+        
         Licz a = new Licz();
-        a.wartosc = 14;
-        a.Dodaj(5);
-        Console.WriteLine("Wynik a = " + a.wartosc);
-
         Licz b = new Licz();
-        b.wartosc = 65;
-        b.Odejmij(11);
-        Console.WriteLine("Wynik b = " + b.wartosc);
-
         Licz c = new Licz();
-        c.wartosc = 9;
-        c.Dodaj(7);
-        c.Odejmij(4);
-        Console.WriteLine("Wynik c = " + c.wartosc);
-
+        
+        a.wartosc = 14;
+        b.wartosc = 65;
+        c.wartosc = -10;
+        
+        a.Dodaj(7);
+        b.Odejmij(23);
+        c.Dodaj(16);
+        c.Odejmij(3);
+        
+        Console.WriteLine("Wartość a: " + a.wartosc);
+        Console.WriteLine("Wartość b: " + b.wartosc);
+        Console.WriteLine("Wartość c: " + c.wartosc);
+        
         Console.ReadKey();
     }
 }
-
