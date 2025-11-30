@@ -1,0 +1,41 @@
+using System;
+
+public class Licz
+{
+    public int wartosc;
+
+    public void Dodaj(int x)
+    {
+        wartosc += x;
+    }
+
+    public void Odejmij(int x)
+    {
+        wartosc -= x;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Licz a = new Licz();
+        a.wartosc = 14;
+        a.Dodaj(5);
+        Console.WriteLine("Wynik a = " + a.wartosc);
+
+        Licz b = new Licz();
+        b.wartosc = 65;
+        b.Odejmij(11);
+        Console.WriteLine("Wynik b = " + b.wartosc);
+
+        Licz c = new Licz();
+        c.wartosc = 9;
+        c.Dodaj(7);
+        c.Odejmij(4);
+        Console.WriteLine("Wynik c = " + c.wartosc);
+
+        Console.ReadKey();
+    }
+}
+
