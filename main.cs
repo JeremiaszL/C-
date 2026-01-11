@@ -1,12 +1,21 @@
 using System;
-
-class Program
-{
-    static void Main()
+class HelloWorld {
+  static void Main() {
+      int a,b,c;
+    Console.WriteLine("Podaj bok a:");
+    a = int.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj bok b:");
+    b = int.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj bok c:");
+    c = int.Parse(Console.ReadLine());
+    if(a+b>c && a+c>b && b+c>a)
     {
-        for (int i = 10; i <= 100; i += 10)
-        {
-            Console.WriteLine(i);
-        }
+        Console.WriteLine("Da się stworzyć trójkąta");
     }
+    else
+    {
+        Console.WriteLine("Nie da się stworzyć trójkąta");
+    }
+    
+  }
 }
